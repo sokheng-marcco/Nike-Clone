@@ -1,9 +1,9 @@
-# Nike Website Clone (React + Vite)
+# Nike Website Clone
 
 This project is a **learning-focused clone of the Nike website**, built using **React JS and Vite**.  
 The goal is to practice real-world frontend workflows, component structure, and clean UI implementation.
 
-This is **not a pixel-perfect copy** of Nike’s website.  
+This is **not a perfect copy** of Nike’s website.  
 It is created for **educational purposes only**.
 
 ---
@@ -54,7 +54,9 @@ src/
 ├── data/
 │ └── products.js
 │
+├── App.css
 ├── App.jsx
+├── Index.css
 ├── main.jsx
 
 ```
@@ -63,10 +65,10 @@ src/
 
 ## Routing
 
-Routing is set up using **React Router DOM** to allow easy expansion.
+Routing is set to allow easy expansion later.
 
 Current routes:
-- `/` → Home page
+- Homepage
 
 Additional pages can be added without restructuring the project.
 
@@ -80,6 +82,18 @@ git clone <repository-url>
 
 npm install
 
+npm run dev
+
+```
+
+### 2. Install dependencies
+```bash
+npm install
+
+```
+
+### 3. Run the project
+```bash
 npm run dev
 
 ```
