@@ -30,15 +30,15 @@ function Navbar() {
   };
 
   return (
-    <header className="w-full border-b border-gray-200 bg-white">
+    <header>
       {/* Top bar: logo left, icons right */}
-      <div className="flex items-center justify-between px-6 h-15">
+      <nav className="flex lg:hidden items-center justify-between px-6 h-15">
         {/* Logo */}
         <div className="shrink-0">
           <SiNike className="h-14 w-auto" />
         </div>
 
-        {/* Right icons - search, user, bag, menu */}
+        {/* Right icons */}
         <div className="flex items-center gap-3">
           <button
             type="button"
@@ -78,14 +78,10 @@ function Navbar() {
             className="p-1 rounded-full hover:bg-gray-100 active:bg-gray-200 transition-colors"
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
-            {isMenuOpen ? (
-              <RiCloseLine className="w-6 h-6" />
-            ) : (
-              <RiMenuLine className="w-6 h-6" />
-            )}
+            <RiMenuLine className="w-6 h-6" />
           </button>
         </div>
-      </div>
+      </nav>
 
       {/* Menu Overlay */}
       <div
@@ -95,8 +91,8 @@ function Navbar() {
         onClick={toggleMenu}
       />
 
-      {/* Search Overlay */}
-      <div
+      {/* Search section */}
+      <section
         className={`fixed inset-0 z-50 bg-white transform transition-transform duration-300 ${
           isSearchOpen ? "translate-x-0" : "translate-x-full"
         }`}
@@ -153,7 +149,7 @@ function Navbar() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Mobile side menu*/}
       <div
@@ -164,7 +160,7 @@ function Navbar() {
         {/* Menu container with sliding panels */}
         <div className="relative w-full h-full overflow-hidden">
           {/* Main Menu Panel */}
-          <div
+          <section
             className={`absolute inset-0 transition-transform duration-300 ease-in-out ${
               activeSubmenu ? "-translate-x-full" : "translate-x-0"
             }`}
@@ -268,10 +264,10 @@ function Navbar() {
                 </div>
               </div>
             </nav>
-          </div>
+          </section>
 
           {/* Submenu Panel */}
-          <div
+          <section
             className={`absolute inset-0 bg-white transition-transform duration-300 ease-in-out ${
               activeSubmenu ? "translate-x-0" : "translate-x-full"
             }`}
@@ -307,7 +303,7 @@ function Navbar() {
               </div>
 
               {/* Submenu items */}
-              <nav className="px-6">
+              <div className="px-6">
                 <ul>
                   {activeSubmenu?.submenu.map((subitem, index) => (
                     <li key={subitem.label}>
@@ -323,9 +319,9 @@ function Navbar() {
                     </li>
                   ))}
                 </ul>
-              </nav>
+              </div>
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </header>
