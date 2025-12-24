@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: "HelveticaNowDisplay-Medium";
+    src: url("https://db.onlinewebfonts.com/t/5ac3fe7c6abd2f62067f266d89671492.woff2") format("woff2");
+    font-weight: 500;
+    font-display: swap;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
