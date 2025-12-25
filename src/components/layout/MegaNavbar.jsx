@@ -77,15 +77,15 @@ const MegaNavbar = () => {
 
         {/* Menu contents middle nav */}
         <div className="flex-1 flex justify-center min-w-0 ">
-          <ul className="flex gap-6 text-base font-medium">
-            {menuItems.map((item, index) => (
+          <ul className="flex gap-3 text-base font-medium">
+            {megaMenuItems.map((item, index) => (
               <li
                 key={index}
                 className="relative"
                 onMouseEnter={() => setActiveMenu(index)}
                 onMouseLeave={() => setActiveMenu(null)}
               >
-                <button className="px-2 py-1 hover:text-gray-600 transition-colors">
+                <button className="px-2 py-1  transition-colors">
                   {item.label}
                 </button>
 
@@ -240,14 +240,14 @@ const MegaNavbar = () => {
             onMouseEnter={() => setActiveMenu(activeMenu)}
             onMouseLeave={() => setActiveMenu(null)}
           >
-            <div className="px-8 py-8">
-              <div className="grid grid-cols-5 gap-8 max-w-7xl mx-auto">
+            <div className="px-30 py-8">
+              <div className="grid grid-cols-5 gap-6 max-w-7xl mx-auto">
                 {megaMenuItems[activeMenu].submenu.map((section, idx) => (
                   <div key={idx}>
-                    <h3 className="font-semibold text-base mb-4 text-black">
+                    <h3 className="font-medium text-base mb-4 text-black">
                       {section.title}
                     </h3>
-                    <ul className="space-y-3">
+                    <ul className="space-y-1 max-h-6xl">
                       {section.items.map((subItem, subIdx) => (
                         <li key={subIdx}>
                           <a

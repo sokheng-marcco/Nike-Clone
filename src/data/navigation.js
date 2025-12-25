@@ -111,39 +111,57 @@ export const megaMenuItems = [
         ]
       },
       {
-        title: "Men",
+        title: "New & Featured",
         items: [
-          { label: "Shoes", href: "#" },
-          { label: "Clothing", href: "#" },
-          { label: "Accessories", href: "#" },
-          { label: "Shop All", href: "#" }
+          { label: "New Arrivals", href: "#" },
+          { label: "Best Sellers", href: "#" },
+          { label: "Latest Drops", href: "#" },
+          { label: "Shop All Gifts", href: "#" },
+          { label: "Shop Gift Cards", href: "#" },
+          { label: "SNKRS Launch Calendar", href: "#" },
+          { label: "Shop All Sale", href: "#" }
         ]
       },
       {
-        title: "Women",
+        title: "Shoes",
         items: [
-          { label: "Shoes", href: "#" },
-          { label: "Clothing", href: "#" },
-          { label: "Accessories", href: "#" },
-          { label: "Shop All", href: "#" }
+          { label: "All Shoes", href: "#" },
+          { label: "Basketball", href: "#" },
+          { label: "Football", href: "#" },
+          { label: "Jordan", href: "#" },
+          { label: "Lifestyle", href: "#" },
+          { label: "Retro Running", href: "#" },
+          { label: "Running", href: "#" },
+          { label: "Shoes $100 & Under", href: "#" },
+          { label: "Soccer", href: "#" },
+          { label: "Training & Gym", href: "#" },
+          { label: "Custom Shoes", href: "#" }
         ]
       },
       {
-        title: "Kids",
+        title: "Clothing",
         items: [
-          { label: "Shoes", href: "#" },
-          { label: "Clothing", href: "#" },
-          { label: "Accessories", href: "#" },
-          { label: "Shop All", href: "#" }
+          { label: "All Clothing", href: "#" },
+          { label: "Hoodies & Sweatshirts", href: "#" },
+          { label: "Jordan", href: "#" },
+          { label: "Matching Sets", href: "#" },
+          { label: "Outerwear", href: "#" },
+          { label: "Pants", href: "#" },
+          { label: "Shorts", href: "#" },
+          { label: "Sweatpants", href: "#" },
+          { label: "Tops & Graphic Tees", href: "#" }
         ]
       },
       {
-        title: "Jordan",
+        title: "Accessories",
         items: [
-          { label: "Shoes", href: "#" },
-          { label: "Clothing", href: "#" },
-          { label: "Accessories", href: "#" },
-          { label: "Shop All", href: "#" }
+          { label: "Bags & Backpacks", href: "#" },
+          { label: "Belts", href: "#" },
+          { label: "Hats & Headwear", href: "#" },
+          { label: "Socks", href: "#" },
+          { label: "Sunglasses", href: "#" },
+          { label: "Underwear", href: "#" },
+          { label: "Recovery Collection", href: "#" }
         ]
       }
     ]
@@ -163,7 +181,11 @@ export const megaMenuItems = [
         items: [
           { label: "New Arrivals", href: "#" },
           { label: "Best Sellers", href: "#" },
-          { label: "Latest Drops", href: "#" }
+          { label: "Latest Drops", href: "#" },
+          { label: "Shop All Gifts", href: "#" },
+          { label: "Shop Gift Cards", href: "#" },
+          { label: "SNKRS Launch Calendar", href: "#" },
+          { label: "Shop All Sale", href: "#" }
         ]
       },
       {
@@ -171,8 +193,15 @@ export const megaMenuItems = [
         items: [
           { label: "All Shoes", href: "#" },
           { label: "Basketball", href: "#" },
+          { label: "Football", href: "#" },
+          { label: "Jordan", href: "#" },
+          { label: "Lifestyle", href: "#" },
+          { label: "Retro Running", href: "#" },
           { label: "Running", href: "#" },
-          { label: "Lifestyle", href: "#" }
+          { label: "Shoes $100 & Under", href: "#" },
+          { label: "Soccer", href: "#" },
+          { label: "Training & Gym", href: "#" },
+          { label: "Custom Shoes", href: "#" }
         ]
       },
       {
@@ -180,16 +209,25 @@ export const megaMenuItems = [
         items: [
           { label: "All Clothing", href: "#" },
           { label: "Hoodies & Sweatshirts", href: "#" },
-          { label: "Tops & T-Shirts", href: "#" },
-          { label: "Pants", href: "#" }
+          { label: "Jordan", href: "#" },
+          { label: "Matching Sets", href: "#" },
+          { label: "Outerwear", href: "#" },
+          { label: "Pants", href: "#" },
+          { label: "Shorts", href: "#" },
+          { label: "Sweatpants", href: "#" },
+          { label: "Tops & Graphic Tees", href: "#" }
         ]
       },
       {
         title: "Accessories",
         items: [
           { label: "Bags & Backpacks", href: "#" },
+          { label: "Belts", href: "#" },
+          { label: "Hats & Headwear", href: "#" },
           { label: "Socks", href: "#" },
-          { label: "Hats & Headwear", href: "#" }
+          { label: "Sunglasses", href: "#" },
+          { label: "Underwear", href: "#" },
+          { label: "Recovery Collection", href: "#" }
         ]
       }
     ]
@@ -208,7 +246,12 @@ export const megaMenuItems = [
         title: "New & Featured",
         items: [
           { label: "New Arrivals", href: "#" },
-          { label: "Best Sellers", href: "#" }
+          { label: "Best Sellers", href: "#" },
+          { label: "Latest Drops", href: "#" },
+          { label: "Shop All Gifts", href: "#" },
+          { label: "Shop Gift Cards", href: "#" },
+          { label: "SNKRS Launch Calendar", href: "#" },
+          { label: "Shop All Sale", href: "#" }
         ]
       },
       {
@@ -216,7 +259,15 @@ export const megaMenuItems = [
         items: [
           { label: "All Shoes", href: "#" },
           { label: "Basketball", href: "#" },
-          { label: "Running", href: "#" }
+          { label: "Football", href: "#" },
+          { label: "Jordan", href: "#" },
+          { label: "Lifestyle", href: "#" },
+          { label: "Retro Running", href: "#" },
+          { label: "Running", href: "#" },
+          { label: "Shoes $100 & Under", href: "#" },
+          { label: "Soccer", href: "#" },
+          { label: "Training & Gym", href: "#" },
+          { label: "Custom Shoes", href: "#" }
         ]
       },
       {
@@ -224,14 +275,25 @@ export const megaMenuItems = [
         items: [
           { label: "All Clothing", href: "#" },
           { label: "Hoodies & Sweatshirts", href: "#" },
-          { label: "Tops & T-Shirts", href: "#" }
+          { label: "Jordan", href: "#" },
+          { label: "Matching Sets", href: "#" },
+          { label: "Outerwear", href: "#" },
+          { label: "Pants", href: "#" },
+          { label: "Shorts", href: "#" },
+          { label: "Sweatpants", href: "#" },
+          { label: "Tops & Graphic Tees", href: "#" }
         ]
       },
       {
         title: "Accessories",
         items: [
           { label: "Bags & Backpacks", href: "#" },
-          { label: "Socks", href: "#" }
+          { label: "Belts", href: "#" },
+          { label: "Hats & Headwear", href: "#" },
+          { label: "Socks", href: "#" },
+          { label: "Sunglasses", href: "#" },
+          { label: "Underwear", href: "#" },
+          { label: "Recovery Collection", href: "#" }
         ]
       }
     ]
@@ -297,7 +359,52 @@ export const megaMenuItems = [
           { label: "Bodysuits", href: "#" },
           { label: "Tops & T-Shirts", href: "#" }
         ]
-      }
+      },
+      {
+        title: "Women",
+        title: "Clothing",
+        items: [
+          { label: "All Clothing", href: "#" },
+          { label: "Hoodies & Sweatshirts", href: "#" },
+          { label: "Jordan", href: "#" },
+          { label: "Matching Sets", href: "#" },
+          { label: "Outerwear", href: "#" },
+          { label: "Pants", href: "#" },
+          { label: "Shorts", href: "#" },
+          { label: "Sweatpants", href: "#" },
+          { label: "Tops & Graphic Tees", href: "#" }
+        ]
+      },
+      {
+        title: "Women",
+        title: "Clothing",
+        items: [
+          { label: "All Clothing", href: "#" },
+          { label: "Hoodies & Sweatshirts", href: "#" },
+          { label: "Jordan", href: "#" },
+          { label: "Matching Sets", href: "#" },
+          { label: "Outerwear", href: "#" },
+          { label: "Pants", href: "#" },
+          { label: "Shorts", href: "#" },
+          { label: "Sweatpants", href: "#" },
+          { label: "Tops & Graphic Tees", href: "#" }
+        ]
+      },
+      {
+        title: "Women",
+        title: "Clothing",
+        items: [
+          { label: "All Clothing", href: "#" },
+          { label: "Hoodies & Sweatshirts", href: "#" },
+          { label: "Jordan", href: "#" },
+          { label: "Matching Sets", href: "#" },
+          { label: "Outerwear", href: "#" },
+          { label: "Pants", href: "#" },
+          { label: "Shorts", href: "#" },
+          { label: "Sweatpants", href: "#" },
+          { label: "Tops & Graphic Tees", href: "#" }
+        ]
+      },
     ]
   },
   {
@@ -305,14 +412,65 @@ export const megaMenuItems = [
     href: "#",
     submenu: [
       {
-        title: "Shop by Sport",
+        title: "Basketball",
         items: [
-          { label: "Running", href: "#" },
-          { label: "Basketball", href: "#" },
-          { label: "Training & Gym", href: "#" },
+          { label: "Shoes", href: "#" },
+          { label: "Apparel", href: "#" },
+          { label: "Equipment", href: "#" },
+          { label: "Kobe", href: "#" },
+          { label: "Jordan", href: "#" },
+          { label: "LeBron", href: "#" }
+        ]
+      },
+      {
+        title: "Soccer",
+        items: [
+          { label: "Cleats", href: "#" },
+          { label: "Indoor Footwear", href: "#" },
+          { label: "Apparel", href: "#" },
+          { label: "Equipment", href: "#" }
+        ]
+      },
+      {
+        title: "Running",
+        items: [
+          { label: "Road", href: "#" },
+          { label: "Race", href: "#" },
+          { label: "Trail", href: "#" },
+          { label: "Track & Field", href: "#" },
+          { label: "Apparel", href: "#" },
+          { label: "Equipment", href: "#" },
+          { label: "Running Shoe Finder", href: "#" }
+        ]
+      },
+      {
+        title: "More Sports",
+        items: [
+          { label: "ACG", href: "#" },
+          { label: "Baseball", href: "#" },
+          { label: "Cheer", href: "#" },
           { label: "Football", href: "#" },
-          { label: "Soccer", href: "#" },
-          { label: "Golf", href: "#" }
+          { label: "Gymnastics", href: "#" },
+          { label: "Lacrosse", href: "#" },
+          { label: "Pickleball", href: "#" },
+          { label: "Skateboarding", href: "#" },
+          { label: "Softball", href: "#" },
+          { label: "Swimming", href: "#" },
+          { label: "Volleyball", href: "#" },
+          { label: "Wrestling", href: "#" }
+        ]
+      },
+      {
+        title: "Locker Room",
+        items: [
+          { label: "NBA Gear", href: "#" },
+          { label: "NFL Gear", href: "#" },
+          { label: "MLB Gear", href: "#" },
+          { label: "WNBA Gear", href: "#" },
+          { label: "NCAA Gear", href: "#" },
+          { label: "NWSL Gear", href: "#" },
+          { label: "Soccer Club Gear", href: "#" },
+          { label: "Federations Gear", href: "#" }
         ]
       }
     ]
