@@ -1,10 +1,23 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
 
 @font-face {
     font-family: "HelveticaNowDisplay-Medium";
     src: url("https://db.onlinewebfonts.com/t/5ac3fe7c6abd2f62067f266d89671492.woff2") format("woff2");
     font-weight: 500;
     font-display: swap;
+}
+
+@font-face {
+  font-family: "BBH Hegarty";
+  src: url("./assets/fonts/BBHHegarty-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-hegarty: "BBH Hegarty", sans-serif;
 }
 
 body {

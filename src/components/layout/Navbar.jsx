@@ -30,9 +30,9 @@ function Navbar() {
   };
 
   return (
-    <header>
+    <header className="sticky top-0 z-50 bg-white">
       {/* Top bar: logo left, icons right */}
-      <nav className="flex lg:hidden items-center justify-between px-6 h-15">
+      <nav className="flex lg:hidden items-center justify-between sticky top-0 z-50 px-6 h-15 bg-white">
         {/* Logo */}
         <div className="shrink-0">
           <SiNike className="h-14 w-auto" />
