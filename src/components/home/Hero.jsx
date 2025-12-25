@@ -105,7 +105,7 @@ function Hero() {
   const strokeDashoffset = circumference - (videoProgress / 100) * circumference;
 
   return (
-    <div className="relative w-full h-[637px] bg-gray-900 overflow-hidden">
+    <section className="relative w-full h-[637px] bg-gray-900 overflow-hidden">
       {/* Video Slides */}
       {heroSlides.map((slide, index) => (
         <div
@@ -229,7 +229,7 @@ function Hero() {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 
