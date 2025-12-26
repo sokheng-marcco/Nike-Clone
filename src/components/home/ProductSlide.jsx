@@ -61,7 +61,7 @@ function SlideshowCards() {
             key={index}
             className={`snap-start shrink-0 w-[70vw] md:w-[540px] lg:w-[300px] xl:w-[400px] 2xl:w-[450px] list-none`}
           >
-            <div className="relative w-full aspect-[3/4] overflow-hidden cursor-pointer group">
+            <div className="relative w-full aspect-3/4 overflow-hidden cursor-pointer group">
               {/* Image */}
               <img
                 src={card.image}
