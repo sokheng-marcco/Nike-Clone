@@ -70,7 +70,7 @@ const MegaNavbar = () => {
         </section>
       </nav>
 
-      {/* Main Menu */}
+      {/* Main menu */}
       <nav className="hidden lg:block sticky top-0 z-50 bg-white">
         <section className="relative flex items-center justify-between px-12 h-15">
           {/* Logo left nav */}
@@ -105,11 +105,11 @@ const MegaNavbar = () => {
           <div className="flex items-center">
             {/* Search section */}
             <section
-              className={`fixed inset-0 z-50 bg-white transform transition-transform duration-300 h-[70%] ${
+              className={`fixed inset-0 z-50 bg-white transform transition-transform duration-300 h-[70%] xl:h-[30%] ${
                 isSearchOpen ? "translate-x-0" : "translate-x-full"
               }`}
             >
-              {/* Search Header */}
+              {/* Search header */}
               <div className="flex items-center justify-between mx-6 transform transition-all duration-500">
                 {/* Logo  */}
                 <div className="">
@@ -160,7 +160,7 @@ const MegaNavbar = () => {
                 </button>
               </div>
 
-              {/* Search Content */}
+              {/* Search content */}
               <div
                 className={`px-45 pt-9 pb-15 transform transition-all duration-500 ${
                   isSearchOpen
@@ -236,7 +236,7 @@ const MegaNavbar = () => {
             </button>
           </div>
 
-          {/* Dropdown Menu */}
+          {/* Dropdown menu */}
           {activeMenu !== null && (
             <div
               className="absolute top-full left-0 right-0 bg-white shadow-lg animate-slideDown"
