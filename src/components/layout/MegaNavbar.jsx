@@ -1,17 +1,11 @@
 import React, { useState } from "react";
-import {
-  RiCloseLine,
-  RiMenuLine,
-  RiArrowRightSLine,
-  RiArrowLeftSLine,
-} from "@remixicon/react";
 import { SiNike, SiJordan } from "react-icons/si";
 import { GiConverseShoe } from "react-icons/gi";
 import {
-  menuItems,
   searchItems,
   topNavbarLink,
   megaMenuItems,
+  helpMenuItems
 } from "../../data/navigation";
 import { IoHeartOutline } from "react-icons/io5";
 
@@ -19,35 +13,22 @@ const MegaNavbar = () => {
   const [activeMenu, setActiveMenu] = useState(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [activeSubmenu, setActiveSubmenu] = useState(null);
-
-  const toggleMenu = () => {
-    setIsMenuOpen((prev) => !prev);
-    setActiveSubmenu(null);
-    if (isSearchOpen) setIsSearchOpen(false);
-  };
+  const [showHelpMenu, setShowHelpMenu] = useState(false);
 
   const toggleSearch = () => {
     setIsSearchOpen((prev) => !prev);
     if (isMenuOpen) setIsMenuOpen(false);
   };
 
-  const openSubmenu = (item) => {
-    setActiveSubmenu(item);
-  };
-
-  const closeSubmenu = () => {
-    setActiveSubmenu(null);
-  };
   return (
     <div>
       {/* Top navbar */}
-      <nav className="hidden lg:block">
+      <nav className="hidden lg:block relative">
         <section className="flex items-center justify-between bg-neutral-100 px-12 h-8">
           {/* Left icons */}
           <div className="flex gap-6">
-            <SiJordan className="w-5 h-5 cursor-pointer " />
-            <GiConverseShoe className="w-5 h-5 cursor-pointer " />
+            <SiJordan className="w-5 h-5 cursor-pointer" />
+            <GiConverseShoe className="w-5 h-5 cursor-pointer" />
           </div>
 
           {/* Right links */}
@@ -56,13 +37,42 @@ const MegaNavbar = () => {
               {topNavbarLink.map((link, index) => (
                 <li
                   key={index}
-                  className={`border-[#111111] pr-4 ${
+                  className={`border-[#111111] pr-4 relative ${
                     index === topNavbarLink.length - 1 ? "" : "border-r"
                   }`}
+                  onMouseEnter={() => link === "Help" && setShowHelpMenu(true)}
+                  onMouseLeave={() => link === "Help" && setShowHelpMenu(false)}
                 >
                   <button className="hover:text-[#707072] cursor-pointer transition-colors">
                     {link}
                   </button>
+
+                  {/* Help panel menu */}
+                  
+                  {/* Help panel menu */}
+                  {link === "Help" && showHelpMenu && (
+                    <div 
+                      className="absolute top-full right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200 py-4 z-100 animate-slideDown"
+                      onMouseEnter={() => setShowHelpMenu(true)}
+                      onMouseLeave={() => setShowHelpMenu(false)}
+                    >
+                      <h3 className="px-6 pb-3 text-base font-medium text-gray-900">
+                        Help
+                      </h3>
+                      <ul className="text-sm">
+                        {helpMenuItems.map((item, idx) => (
+                          <li key={idx}>
+                            <button 
+                              type="button"
+                              className="w-full text-left px-6 py-2 block text-sm text-gray-600 hover:text-black transition-colors cursor-pointer"
+                            >
+                              {item}
+                            </button>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </li>
               ))}
             </ul>
