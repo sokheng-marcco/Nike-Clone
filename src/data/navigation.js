@@ -99,6 +99,19 @@ export const topNavbarLink = [
   "Find a Store", "Help", "Join Us", "Sign In"
 ]
 
+export const helpMenuItems = [
+  "Order Status",
+  "Shipping & Delivery",
+  "Returns",
+  "Order Cancellation",
+  "Size Charts",
+  "Contact Us",
+  "Membership",
+  "Promotions & Discounts",
+  "Product Advice",
+  "Send Us Feedback"
+];
+
 export const megaMenuItems = [
   {
     label: "Men",
