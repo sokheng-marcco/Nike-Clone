@@ -11,7 +11,7 @@ function SpotLight() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 md:mx-18 lg:mx-40 lg:mb-25">
-          <h2 className="text-[40px] lg:text-7xl font-black tracking-tighter">
+          <h2 className="font-hegarty text-[40px] lg:text-7xl font-black tracking-tighter">
             SPOTLIGHT
           </h2>
           <p className="text-base max-w-2xl mx-auto">

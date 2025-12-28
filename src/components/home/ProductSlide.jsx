@@ -48,12 +48,12 @@ function SlideshowCards() {
   };
 
   return (
-    <section className="w-full bg-white py-12 pl-6 lg:pl-12 flex">
+    <section className="w-full bg-white pb-12 pt-18 pl-6 lg:pl-12 flex ">
       <div
         ref={scrollContainerRef}
         onScroll={handleScroll}
         className="overflow-x-auto pb-4 snap-x snap-mandatory h-auto"
-        style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+        // style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         <ul className="flex gap-3">
           {productCard.map((card, index) => (

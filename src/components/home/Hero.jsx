@@ -1,34 +1,11 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from "react";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
-import hero1 from '../../assets/videos/hero1.mp4';
-import hero2 from '../../assets/videos/hero2.mp4';
-import hero3 from '../../assets/videos/hero3.mp4';
+import heroSlides from "../../data/hero";
 
 function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const videoRefs = useRef([]);
-
-  const heroSlides = [
-    {
-      video: hero1,
-      title: "SPEED, MULTIPLIED.",
-      description: "Unlock your fastest time with Nike Fast Pack.",
-      buttonText: "Shop"
-    },
-    {
-      video: hero2,
-      title: "JUST DO IT.",
-      description: "Your next chapter starts here.",
-      buttonText: "Explore"
-    },
-    {
-      video: hero3,
-      title: "MOVE TO ZERO.",
-      description: "Our journey towards zero carbon and zero waste.",
-      buttonText: "Learn More"
-    }
-  ];
 
   useEffect(() => {
     const currentVideo = videoRefs.current[currentSlide];
@@ -84,14 +61,13 @@ function Hero() {
       currentVideo.play();
     }
 
-    
     return () => {
       if (currentVideo) {
         currentVideo.removeEventListener("timeupdate", updateProgress);
       }
     };
   }, [currentSlide]);
-  
+
   const goToPrevSlide = () => {
     goToSlide((currentSlide - 1 + heroSlides.length) % heroSlides.length);
   };
@@ -100,9 +76,9 @@ function Hero() {
     goToSlide((currentSlide + 1) % heroSlides.length);
   };
 
-  // Calculate stroke dasharray for smooth circular progress
   const circumference = 2 * Math.PI * 45; // 2πr where r=45%
-  const strokeDashoffset = circumference - (videoProgress / 100) * circumference;
+  const strokeDashoffset =
+    circumference - (videoProgress / 100) * circumference;
 
   return (
     <section className="relative w-full h-[637px] bg-gray-900 overflow-hidden">
@@ -144,13 +120,13 @@ function Hero() {
       ))}
 
       <div className="absolute right-6 bottom-6 z-30 flex items-center gap-3">
-        {/* Pause/Play Button */}
+        {/* Pause/Play button */}
         <button
           onClick={togglePause}
           className="bg-white/10 backdrop-blur-sm rounded-full border-white/30 transition-colors w-6 h-6 md:w-9 md:h-9 relative cursor-pointer"
           aria-label={isPaused ? "Play" : "Pause"}
         >
-          {/* Circular Progress */}
+          {/* Circular progress */}
           <svg
             className="absolute inset-0 -rotate-90 w-full h-full"
             viewBox="0 0 100 100"
@@ -198,7 +174,7 @@ function Hero() {
           )}
         </button>
 
-        {/* Navigation Arrows - Medium screens and up */}
+        {/* Navigation arrows */}
         <button
           onClick={goToPrevSlide}
           className="hidden md:flex items-center justify-center bg-white/60 backdrop-blur-sm rounded-full border border-white/30 hover:bg-white/80 transition-colors w-9 h-9 cursor-pointer"
@@ -216,7 +192,7 @@ function Hero() {
         </button>
       </div>
 
-      {/* Slide Indicators */}
+      {/* Slide indicators */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex gap-2">
         {heroSlides.map((_, index) => (
           <button
